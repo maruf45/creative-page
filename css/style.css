@@ -1,0 +1,58 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+    box-sizing: border-box;
+}
+
+body {
+    background: #2A2A2A;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 120px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+nav .max-width ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav .max-width ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B6B6B6;
+    padding: 0 18px;
+}
+
+nav .max-width ul li .contact {
+    font-weight: 700;
+    background: #1AA37A;
+    box-shadow: 0px 10px 57px rgba(157, 255, 179, 0.2);
+    border-radius: 40px;
+    padding: 16px 32px;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    border-color: #1AA37A;
+    margin-left: 18px;
+}
+
+nav .max-width ul li .contact:hover {
+    box-shadow: 0 0 10px 0 #1AA37A inset, 0 0 10px 4px #1AA37A;
+    background-color: transparent;
+    color: #1AA37A;
+
+}
