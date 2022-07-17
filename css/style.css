@@ -25,6 +25,11 @@ nav .max-width {
     max-width: 1600px;
 }
 
+nav .max-width .logo img {
+    width: 90px;
+    margin-bottom: 13px;
+}
+
 nav .max-width ul {
     display: flex;
     list-style-type: none;
@@ -36,6 +41,11 @@ nav .max-width ul li a {
     font-weight: 400;
     color: #B6B6B6;
     padding: 0 18px;
+    transition: 0.1s;
+}
+
+nav .max-width ul a:hover {
+    color: #1AA37A;
 }
 
 nav .max-width ul li .contact {
@@ -54,5 +64,4 @@ nav .max-width ul li .contact:hover {
     box-shadow: 0 0 10px 0 #1AA37A inset, 0 0 10px 4px #1AA37A;
     background-color: transparent;
     color: #1AA37A;
-
 }
