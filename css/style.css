@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #2A2A2A;
+    background: #2A2A2A;    
 }
 
 nav {
@@ -64,4 +64,73 @@ nav .max-width ul li .contact:hover {
     box-shadow: 0 0 10px 0 #1AA37A inset, 0 0 10px 4px #1AA37A;
     background-color: transparent;
     color: #1AA37A;
+}
+
+/* home section styling  */
+#home {
+    height: 80vh;
+}
+
+#home .max-width {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 120px;
+}
+
+#home .max-width .circle-1 {
+    background: radial-gradient(50% 50% at 50% 50%, #B9CEEA 0%, rgba(42, 42, 42, 0) 100%);
+    position: absolute;
+    opacity: 0.7;
+    left: 164px;
+    top: -81px;
+    z-index: -1;
+    width: 634px;
+    height: 634px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-container .left-side h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-bottom: 65px;
+}
+
+.home-container .left-side .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 577px;
+    height: 115px;
+    background: #3F3F3F;
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    margin: 16px 0;
+}
+
+.home-container .left-side .avatar img {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+}
+
+.home-container .left-side .avatar h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.home-container .left-side .avatar p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ACACAC;
 }
