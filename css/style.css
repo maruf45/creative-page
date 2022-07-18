@@ -220,11 +220,44 @@ nav .max-width .fa-bars {
         transition: 0.3s;
     }
 
-    #click:checked ~ ul {
+    #click:checked~ul {
         left: 0%;
     }
 
-    #click:checked ~ .menu-btn .fa-bars::before {
+    #click:checked~.menu-btn .fa-bars::before {
         content: '\f00d';
+        position: fixed;
+    }
+}
+
+@media screen and (max-width:425px) {
+    nav .max-width {
+        padding: 40px 30px;
+    }
+
+    #home .max-width {
+        padding: 0 60px;
+    }
+    .home-container .right-side img {
+        width: 410px;
+    }
+    .home-container .left-side h1 {
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .home-container .left-side .avatar {
+        width: 390px;
+        height: 130px;
+        padding: 0 10px;
+    }
+    .home-container .left-side .avatar img{
+        width: 54px;
+        height: 54px;
+        
+    }
+    .home-container .left-side .avatar p{
+       font-size: 15px; 
+       line-height: 20px;
     }
 }
