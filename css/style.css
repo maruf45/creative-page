@@ -156,8 +156,6 @@ nav .max-width .fa-bars {
     }
 
     .home-container {
-        /* flex-wrap: wrap;
-        /* flex-direction: column-reverse; */
         gap: 100px;
         height: 70vh;
     }
@@ -226,7 +224,7 @@ nav .max-width .fa-bars {
 
     #click:checked~.menu-btn .fa-bars::before {
         content: '\f00d';
-        position: fixed;
+        font-size: 25px;
     }
 }
 
@@ -238,26 +236,59 @@ nav .max-width .fa-bars {
     #home .max-width {
         padding: 0 60px;
     }
+
     .home-container .right-side img {
         width: 410px;
     }
+
     .home-container .left-side h1 {
         font-size: 25px;
         line-height: 38px;
         margin-bottom: 20px;
     }
+
     .home-container .left-side .avatar {
         width: 390px;
         height: 130px;
         padding: 0 10px;
     }
-    .home-container .left-side .avatar img{
+
+    .home-container .left-side .avatar img {
         width: 54px;
         height: 54px;
-        
+
     }
-    .home-container .left-side .avatar p{
-       font-size: 15px; 
-       line-height: 20px;
+
+    .home-container .left-side .avatar p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .home-container .right-side img {
+        width: 370px;
+    }
+
+    .home-container .left-side .avatar {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    nav .max-width {
+        padding: 30px 20px;
+    }
+
+    #home .max-width {
+        padding: 0 20px;
+    }
+
+    .home-container .right-side img {
+        width: 310px;
+    }
+
+    .home-container .left-side .avatar {
+        width: 310px;
     }
 }
