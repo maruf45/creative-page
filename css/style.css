@@ -9,7 +9,9 @@
 }
 
 body {
-    background: #2A2A2A;
+    background: #2a2a2a;
+    position: relative;
+    z-index: 1;
 }
 
 nav {
@@ -79,12 +81,13 @@ nav .max-width ul li .contact:hover {
 #home .max-width .circle-1 {
     background: radial-gradient(50% 50% at 50% 50%, #B9CEEA 0%, rgba(42, 42, 42, 0) 100%);
     position: absolute;
-    opacity: 0.7;
+    filter: blur(80px);
+    opacity: 0.3;
     left: 164px;
     top: -81px;
-    z-index: -1;
-    width: 634px;
-    height: 634px;
+    z-index: -45;
+    width: 84.533vw;
+    height: 84.533vh;
 }
 
 .home-container {
@@ -208,20 +211,22 @@ nav .max-width .fa-bars {
         position: fixed;
         z-index: 999;
         top: 0;
-        left: 100%;
+        left: 0%;
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur( 25px );
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 50px;
-        transition: 0.3s;
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: transform 0.3s ease-in-out ;
     }
 
     #click:checked~ul {
-        left: 0%;
+        transform: scaleX(1);
     }
 
     #click:checked~.menu-btn .fa-bars::before {
